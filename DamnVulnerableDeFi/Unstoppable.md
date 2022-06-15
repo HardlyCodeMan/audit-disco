@@ -16,5 +16,8 @@ it('Exploit', async function () {
 });
 ```
 
-**NOTE**: I was having an issue with hardhat relating to getsigners(). To fix for this challenge *const* was added prior to the line setting the account names.
-`const [deployer, attacker, someUser] = await ethers.getSigners();
+**NOTE**: I was having an issue with hardhat relating to getSigners() line 14 of unstoppable.challenge.js. To fix for this challenge *const* was added to the line setting the account names.
+
+```
+const [deployer, attacker, someUser] = await ethers.getSigners();
+```
