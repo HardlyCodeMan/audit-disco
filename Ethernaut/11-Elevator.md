@@ -13,7 +13,7 @@ top = building.isLastFloor(floor);
 ```
 Double check with the JS web3 console
 ```javascript
-await isntance.top()
+await instance.top()
 ```
 
 
