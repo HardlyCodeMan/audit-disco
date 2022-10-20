@@ -1,4 +1,4 @@
-Challenge 1
+Challenge 1 - The Gala NFT
 
 The NFT contract has an unprotected public function increaseMaxSupply() that we can use to exploit the contract to get ourselves an NFT.
 
