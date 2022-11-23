@@ -3,18 +3,17 @@
 
 While remembering that everything on the blockchain is public, we are able to retrieve storage areas of the contract in this case we want to see whats in storage for bytes32[3] private data.
 
-```solidity
-[slot]-[bytes]   
-[0]-[01]        bool public locked = true;
-[1]-[32]        uint256 public ID = block.timestamp;
-[2]-[01]        uint8 private flattening = 10;
-[2]-[01]        uint8 private denomination = 255;
-[2]-[02]        uint16 private awkwardness = uint16(now);
-                bytes32[3] private data;
-[3]-[32]            data[0]
-[4]-[32]            data[1]
-[5]-[32]            data[2]       
-```
+| Slot | Bytes | Contract Data |
+|------|-------|---------------|
+| [0]  | [01]  | bool public locked = true; |
+| [1]  | [32]  | uint256 public ID = block.timestamp; |
+| [2]  | [01]  | uint8 private flattening = 10; |
+| [2]  | [01]  | uint8 private denomination = 255; |
+| [2]  | [02]  | uint16 private awkwardness = uint16(now); |
+| [3-5] | [96] | bytes32[3] private data; |
+| [3]  | [32]  |  - data[0] |
+| [4]  | [32]  |  - data[1] |
+| [5]  | [32]  |  - data[2] |     
 
 We see ther unlock key is stored in data[2] which will be the final index of the data array with length 3, remembering the first index of an array is [0].
 
