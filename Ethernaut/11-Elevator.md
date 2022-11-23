@@ -3,6 +3,9 @@
 
 The Elevator contract utilises an interface for an external contract Building, however the address for the Building contract is not stored in the Elevator contract allowing potential for a malicious contract interaction. The Elevator contract assumes that the call will be made from the BUilding contract and thus sets the interface address via msg.sender, this is our way in for our malicious contract.
 
+### Remix
+Use Remix to deploy [HackElevator.sol](./11-Elevator/HackElevator.sol) **ensure** you update the vulnerable contract address.
+
 ### callElevator()
 We need to call the elevator contract to set the chain of events in motion.
 
@@ -13,7 +16,7 @@ top = building.isLastFloor(floor);
 ```
 Double check with the JS web3 console
 ```javascript
-await instance.top()
+await contract.top()
 ```
 
 

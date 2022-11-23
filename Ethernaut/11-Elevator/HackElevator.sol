@@ -4,7 +4,7 @@ pragma solidity ^0.6.0;
 import "./Elevator.sol";
 
 contract HackBuidling {
-    Elevator public original = Elevator(0xdfB0f070829dC3295a335Ef927033a8EAc6Ed6AF);
+    Elevator public original = Elevator(0x0000); /// @dev update this with your instance address
     bool public flag = false;
 
     function isLastFloor(uint) public returns (bool) {
