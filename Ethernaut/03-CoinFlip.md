@@ -1,5 +1,5 @@
 ## Ethernaut 
-### CoinFlip
+### CoinFlip [Contracts](./03-CoinFlip/)
 
 Click on "Get New Instance" to deploy the level contract on the Rinkeby network we may get started with the challenge.
 

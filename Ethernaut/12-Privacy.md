@@ -1,5 +1,5 @@
 ## Ethernaut 
-### Privacy
+### Privacy [Contracts](./12-Privacy/Privacy.sol)
 
 While remembering that everything on the blockchain is public, we are able to retrieve storage areas of the contract in this case we want to see whats in storage for bytes32[3] private data.
 

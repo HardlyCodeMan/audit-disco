@@ -1,5 +1,5 @@
 ## Ethernaut 
-### King
+### King [Contracts](./09-King/)
 
 The King.sol contract has fallback function (receive()) which runs some code. Part of this code is to send the prize to the current king, set the new king address and set the new prize value. The transfer does not check for success, so we can write malicious code in a fallback receive() that would revert the transfer but still set the new king and the new prize.
 
