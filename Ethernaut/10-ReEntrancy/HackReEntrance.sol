@@ -39,7 +39,7 @@ contract HackReEntrant2 {
     }
 
     function donateToSelf() public payable { 
-        original.donate.value(amount).gas(4000000)(address(this));
+        original.donate.value(amount).gas(1000000000000000)(address(this));
     }
 
     receive() external payable {
