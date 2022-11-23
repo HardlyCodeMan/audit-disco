@@ -2,6 +2,7 @@
 pragma solidity ^0.6.0;
 
 import "../node_modules/@openzeppelin/contracts/math/SafeMath.sol";
+//import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v3.4/contracts/math/SafeMath.sol";  /// @dev for remix
 
 contract Reentrance {
   
@@ -30,7 +31,7 @@ contract Reentrance {
 }
 
 contract HackReEntrant2 {
-    Reentrance public original = Reentrance(0x57A8ee948Ad654a3573c0f3a5a156C7dD2900078);
+    Reentrance public original = Reentrance(0x0000); /// @dev put instance address here
     uint public amount = 1000000000000000 wei;
 	address payable actor;
 
