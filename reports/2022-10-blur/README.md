@@ -12,7 +12,7 @@
 - N/A
 
 ### Published C4 Report
-- [_target](https://https://code4rena.com/reports/2022-10-blur/)
+- [Code4rena Public Audit Report](https://https://code4rena.com/reports/2022-10-blur/)
 
 ### GitHub Issues for Reports
 - [Gas issue #507](https://github.com/code-423n4/2022-10-blur-findings/issues/507)
