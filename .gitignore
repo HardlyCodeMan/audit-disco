@@ -9,6 +9,15 @@
 *.user
 *.userosscache
 *.sln.docstates
+.vscode/
+[Cc]ache/
+[Ll]ib/
+[Oo]ut/
+[Ss]cript/
+.solcx-lock-*
+package-lock.json
+*openzeppelin*/
+audit_helper.py
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
