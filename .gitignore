@@ -19,6 +19,7 @@ package-lock.json
 *openzeppelin*/
 forge-std/
 audit_helper.py
+.env
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

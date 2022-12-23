@@ -1,0 +1,45 @@
+// Initialisation of bytecode
+60      PUSH1
+0a      10          // s: 10 bytes
+60      PUSH1
+                    // f: position of opcode in runtime code unknown until all init and runtim code written
+60      PUSH1
+00                  // t: memory offset location
+39      CODECOPY(t,f,s)
+
+600a60__600039
+
+// Runtime opcode
+60      PUSH1
+0a      10          // 10 bytes in size
+60      PUSH1
+00      0           // memory offset location
+F3      RETURN
+
+600a6000f3
+
+// Store the value
+60      PUSH1
+2a      42          // hex 42
+60      PUSH1
+80                  // memory storage slot location
+52      MSTORE      // stores 2a in slot 80
+
+602a608052
+
+// Retrieve the value
+60      PUSH1 
+20                  // size of return value
+60      PUSH1
+80                  // location of return value
+F3	    RETURN
+
+// Final bytecode size 10, max size 10
+60206080f3
+
+// Bytecode at this stage is
+600a60__600039600a6000f3602a60805260206080f3
+
+// Initialisation + runtime makes 12 bytes (0x0c) which is the missing push1 value of the initialisation
+// Final bytecode
+600a600c600039600a6000f3602a60805260206080f3
