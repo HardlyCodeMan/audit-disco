@@ -19,10 +19,10 @@ contract HackPreservation {
     }
 
     function setTime(uint _time) external {
-        owner = attacker;
+        owner = address(uint160(_time));
     }
 
-    function hackContract(address _address) public view returns(uint256) {
+    function hackContract(address _address) public pure returns(uint256) {
         return uint256(uint160(address(_address))); // Convert address to uint256
     }
 

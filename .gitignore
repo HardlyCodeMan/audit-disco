@@ -10,16 +10,17 @@
 *.userosscache
 *.sln.docstates
 .vscode/
+[Bb]roadcast/
 [Cc]ache/
 [Ll]ib/
 [Oo]ut/
-[Ss]cript/
 .solcx-lock-*
 package-lock.json
 *openzeppelin*/
 forge-std/
 audit_helper.py
 .env
+soljson-v*.js
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

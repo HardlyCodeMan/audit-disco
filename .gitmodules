@@ -12,3 +12,8 @@
 [submodule "Ethernaut/15-NaughtCoin/lib/openzeppelin-contracts"]
 	path = Ethernaut/15-NaughtCoin/lib/openzeppelin-contracts
 	url = https://github.com/openzeppelin/openzeppelin-contracts/
+[submodule "Ethernaut/19-AlienCodex/lib/openzeppelin-contracts"]
+	path = Ethernaut/19-AlienCodex/lib/openzeppelin-contracts
+	url = https://github.com/openzeppelin/openzeppelin-contracts
+[submodule "lib/openzeppelin-contracts"]
+	branch = v4.8.0
