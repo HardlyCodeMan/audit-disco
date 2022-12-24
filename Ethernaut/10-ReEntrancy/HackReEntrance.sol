@@ -35,7 +35,7 @@ contract HackReEntrant {
     uint public amount;
 	address payable actor;
 
-    constructor(Reentrance _address) public {
+    constructor(Reentrance _address) {
 		actor = msg.sender;
 		original = _address;
     }
