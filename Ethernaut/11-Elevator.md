@@ -1,5 +1,13 @@
-## Ethernaut 
-### Elevator [Contracts](./11-Elevator/)
+![Ethernaut Elevator!](https://ethernaut.openzeppelin.com/imgs/BigLevel11.svg)
+
+## Ethernaut - 11 - Elevator 
+
+You can use the ```view``` function modifier on an interface in order to prevent state modifications. The pure modifier also prevents functions from modifying the state. Make sure you read [Solidity's documentation](http://solidity.readthedocs.io/en/develop/contracts.html#view-functions) and learn its caveats.
+
+An alternative way to solve this level is to build a view function which returns different results depends on input data but don't modify state, e.g. ```gasleft()```.
+
+### Solution 
+[Contracts](./11-Elevator/)
 
 The Elevator contract utilises an interface for an external contract Building, however the address for the Building contract is not stored in the Elevator contract allowing potential for a malicious contract interaction. The Elevator contract assumes that the call will be made from the BUilding contract and thus sets the interface address via msg.sender, this is our way in for our malicious contract.
 
