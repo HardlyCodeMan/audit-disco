@@ -10,5 +10,4 @@ Things that might help:
 - The ```^``` character in the third gate is a bitwise operation (XOR), and is used here to apply another common bitwise operation (see [here](http://solidity.readthedocs.io/en/v0.8.17/miscellaneous.html#cheatsheet)). The Coin Flip level is also a good place to start when approaching this challenge.
 
 ### Solution
-
 [Contracts](./14-GatekeeperTwo/)

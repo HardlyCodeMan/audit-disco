@@ -1,5 +1,14 @@
-## Ethernaut 
-### Fallback
+![Ethernaut - Fallback!](https://ethernaut.openzeppelin.com/imgs/BigLevel1.svg)
+
+## Ethernaut - 1 - Fallback
+
+You know the basics of how ether goes in and out of contracts, including the usage of the fallback method.
+
+You've also learnt about OpenZeppelin's Ownable contract, and how it can be used to restrict the usage of some methods to a privileged address.
+
+Move on to the next level when you're ready!
+
+### Solution
 
 Click on "Get New Instance" to deploy the level contract on the Rinkeby network we may get started with the challenge.
 

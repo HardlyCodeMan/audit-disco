@@ -7,8 +7,7 @@ Nothing in the ethereum blockchain is private. The keyword private is merely an 
 It can't get much more complicated than what was exposed in this level. For more, check out this excellent article by "Darius": [How to read Ethereum contract storage](https://medium.com/aigang-network/how-to-read-ethereum-contract-storage-44252c8af925)
 
 ### Solution
-
-[Contracts](./12-Privacy/Privacy.sol)
+[Contracts](./12-Privacy/)
 
 While remembering that everything on the blockchain is public, we are able to retrieve storage areas of the contract in this case we want to see whats in storage for bytes32[3] private data.
 

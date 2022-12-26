@@ -11,6 +11,7 @@ An interesting [blog post](https://swende.se/blog/Ethereum_quirks_and_vulns.html
 If you're going to implement this technique, make sure you don't miss the nonce, or your funds will be lost forever.
 
 ### Solution
+[Contracts](./17-Recovery/)
 
 https://blog.dixitaditya.com/ethernaut-level-17-recovery
 

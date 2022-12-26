@@ -9,7 +9,6 @@ Things that might help:
 - You can learn more about the special function ```gasleft()```, in Solidity's documentation (see [here](https://docs.soliditylang.org/en/v0.8.17/units-and-global-variables.html) and [here](https://docs.soliditylang.org/en/v0.8.17/control-structures.html#external-function-calls)).
 
 ### Solution
-
 [Contracts](./13-GatekeeperOne/)
 
 GateOne:

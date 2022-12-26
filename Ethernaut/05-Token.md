@@ -1,5 +1,21 @@
-## Ethernaut 
-### Token [Contracts](./05-Token/Token.sol)
+![Ethernaut Token!](https://ethernaut.openzeppelin.com/imgs/BigLevel5.svg)
+
+## Ethernaut - 5 - Token
+
+Overflows are very common in solidity and must be checked for with control statements such as:
+
+```solidity
+if(a + c > a) {
+  a = a + c;
+}
+```
+An easier alternative is to use OpenZeppelin's SafeMath library that automatically checks for overflows in all the mathematical operators. The resulting code looks like this:
+
+```a = a.add(c);```
+If there is an overflow, the code will revert.
+
+### Solution
+[Contracts](./05-Token/Token.sol)
 
 Click on "Get New Instance" to deploy the level contract on the Rinkeby network we may get started with the challenge.
 

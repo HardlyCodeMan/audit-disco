@@ -1,5 +1,14 @@
-## Ethernaut 
-### Hello Ethernaut
+![Ethernaut - Hello Ethernaut!](https://ethernaut.openzeppelin.com/imgs/BigLevel0.svg)
+
+## Ethernaut - 0 - Hello Ethernaut
+
+Congratulations! You have completed the tutorial. Have a look at the Solidity code for the contract you just interacted with below.
+
+You are now ready to complete all the levels of the game, and as of now, you're on your own.
+
+Godspeed!!
+
+### Solution
 
 After following the instructions to deploy the level contract on the Rinkeby network (step 7) we start getting into the challenge.
 
