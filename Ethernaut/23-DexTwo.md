@@ -1,4 +1,4 @@
-![Ethernaut - DEexTwo!](https://ethernaut.openzeppelin.com/imgs/BigLevel23.svg)
+![Ethernaut - DexTwo!](https://ethernaut.openzeppelin.com/imgs/BigLevel23.svg)
 
 ## Ethernaut - 23 - DexTwo
 
