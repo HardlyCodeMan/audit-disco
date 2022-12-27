@@ -25,3 +25,15 @@ DexTwo.sol
     require(IERC20(from).balanceOf(msg.sender) >= amount, "Not enough to swap");
     uint swapAmount = getSwapPrice(from, to, amount);
 ```
+
+The missing line:
+```require((from == token1 && to == token2) || (from == token2 && to == token1), "Invalid tokens");```
+checks that the tokens the user would liek to swap are only from these two approved addresses. 
+
+With this check missing in DexTwo, we can create out own ERC20 compatible token with Openzeppelins boilerplate ERC20, and utilise it in the swap process to drain the legitimate token funds.
+
+Once the ERC20 token is created and minted 400 to the attacker, the attacker must set an approval for themselves (100) and the dex (300), then 100 tokens are sent to the dex to prevent ```getSwapAmount()``` reverting with a ```divide by 0``` error if the dex balance of the token is 0 during the ```swap()```.
+
+Then obviously the swap is run and the instance can be submitted.
+
+✌(◕‿-)✌ Well done, You have completed this level!!!
