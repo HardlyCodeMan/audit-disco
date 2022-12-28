@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
-pragma experimental ABIEncoderV2;
+// pragma experimental ABIEncoderV2; // not required with pragma 0.8
 
 import "openzeppelin-contracts/proxy/ERC1967/ERC1967Proxy.sol";
 
@@ -72,7 +72,7 @@ contract PuzzleWallet {
 
     function multicall(bytes[] calldata data) external payable onlyWhitelisted {
         bool depositCalled = false;
-        for (uint256 i = 0; i < data.length; i++) {
+        for (uint256 i = 0; i < data.length; i++) { /// @audit no need to set i to 0, cache data.length, i++
             bytes memory _data = data[i];
             bytes4 selector;
             assembly {
