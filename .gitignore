@@ -12,7 +12,7 @@
 .vscode/
 [Bb]roadcast/
 [Cc]ache/
-[Ll]ib/
+[Ll]ib/*
 [Oo]ut/
 .solcx-lock-*
 package-lock.json
@@ -20,7 +20,8 @@ package-lock.json
 forge-std/
 audit_helper.py
 .env
-soljson-v*.js
+soljson*.js
+*.zip
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
