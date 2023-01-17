@@ -14,10 +14,10 @@
 - N/A
 
 ### Published C4 Report
-- [Code4rena Public Audit Report](https:///)
+- [Code4rena Public Audit Report](https://code4rena.com/reports/2022-10-paladin)
 
 ### GitHub Issues for Reports
-- [Gas issue #](https://github.com/code-423n4/2022-10-paladin-findings/issues/)
+- [Gas issue #](https://github.com/code-423n4/2022-10-paladin-findings/issues/143)
 
 ### Payout
 - $0.00 USDC
