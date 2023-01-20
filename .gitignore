@@ -12,7 +12,7 @@
 .vscode/
 [Bb]roadcast/
 [Cc]ache/
-[Ll]ib/*
+[Ll]ib/
 [Oo]ut/
 .solcx-lock-*
 package-lock.json

@@ -16,5 +16,19 @@ Things that might help:
 - How does a double entry point work for a token contract?
 
 ### Solution
-[Contract](./26-DoubleEntryPoint/)
+[Contracts](./26-DoubleEntryPoint/src/)
+[Scripts](./26-DoubleEntryPoint/script/)
 
+#### The Attack
+The attack is simplified to ```cryptoVault.sweepToken(legacyToken)```.
+
+Having legacyToken override ```transfer()``` with ```delegateTransfer()``` if the delegate is set, so will utilise ```msg.sender``` which will be CryptoVault as the _from address in ```_transfer()``` of IERC20.
+
+#### The Mitigation
+We need to create a detection bot to intereact with Forta which has the function ```handleTransaction()``` to check if the sender is the vault, we raise an alert ```raiseAlert()``` to prevent the malicious transaction.
+
+To do this we need to retrieve the embedded ```msg.sender``` address from the second layer of calldata and check it against the CryptoVault address, raising an alert should the call originate at the CryptoVault.
+
+We want the second layer of calldata, as the first layer of calldata will be calling our ```handleTransaftion()``` function.
+
+✌(◕‿-)✌ Well done, You have completed this level!!!
