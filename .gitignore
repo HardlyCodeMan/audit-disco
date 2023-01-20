@@ -16,7 +16,6 @@
 [Oo]ut/
 .solcx-lock-*
 package-lock.json
-*openzeppelin*/
 forge-std/
 audit_helper.py
 .env
