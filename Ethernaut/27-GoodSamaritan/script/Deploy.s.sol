@@ -7,9 +7,9 @@ import "../src/GoodSamaritan.sol";
 import "../src/HackGoodSamaritan.sol";
 
 contract DeployGoodSamaritan is Script {
-    address player = 0x8656D273630865bB4887E00d86a338A214Ac4b50;
+    address player = <player address>;
 
-    GoodSamaritan public goodSamaritan = GoodSamaritan(0x190fb37f830D633F6Fc03ACE5531373b0f676b99);
+    GoodSamaritan public goodSamaritan = GoodSamaritan(<level 27 contract address>);
     HackGoodSamaritan public hackGoodSamaritan;
 
     function run() public {

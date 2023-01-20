@@ -1,4 +1,4 @@
-![Ethernaut - Good Samaritan!](https://ethernaut.openzeppelin.com/imgs/BigLevel27.svg)
+![Ethernaut - Good Samaritan!](https://ethernaut.openzeppelin.com/imgs/BigLevel27.png)
 
 ## Ethernaut - 27 - Good Samaritan
 This instance represents a Good Samaritan that is wealthy and ready to donate some coins to anyone requesting it.
