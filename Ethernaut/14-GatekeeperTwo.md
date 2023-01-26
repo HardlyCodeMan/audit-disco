@@ -11,3 +11,17 @@ Things that might help:
 
 ### Solution
 [Contracts](./14-GatekeeperTwo/)
+
+GatekeeperTwo follows on from [GatekeeperOne](./13-GatekeeperOne.md), in that there are 3 function modifiers that must have their requirements met to become ```entrant```, completing the challenge.
+
+```gateOne()``` Requires the call to come from an account other than msg.sender ie. from a contract.
+
+```gateTwo()``` Requires the call to come from an account with a code size of 0, which could be either an EOA (normal wallet account) or from a contract during the constructor phase of deployment, as making calls from the constructor (while it's being deployed), ensures ```extcodesize``` = 0
+
+```gateThree()``` The [solidity docs](http://solidity.readthedocs.io/en/v0.8.17/miscellaneous.html#cheatsheet) list the ```^``` character as the implementation of an ```XOR``` (exclusive or) operation. 
+Given the following equation ```a ^ b = c``` it can be translated to english that either a or b can equal c but not both. Therefore we can logically translate the equation to ```a ^ c = b```, or a or c can equal b but not both.
+
+
+The contract is now unlocked, click the "Submit Instance" button and approve that transaction to complete the level.
+
+✌(◕‿-)✌ Well done, You have completed this level!!!
