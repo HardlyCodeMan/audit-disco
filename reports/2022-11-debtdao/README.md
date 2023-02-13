@@ -14,7 +14,7 @@
 
 ### GitHub Issues for Reports
 - [Gas issue #]()
-- [QA / Low issue #](https://github.com/code-423n4/2022-11-debtdao-findings/issues/218)
+- [QA / Low issue #218](https://github.com/code-423n4/2022-11-debtdao-findings/issues/218)
 
 ### Payout
 - $61.35 USDC
