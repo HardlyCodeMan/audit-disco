@@ -13,8 +13,8 @@
 - [Code4rena Public Audit Report](https://https://code4rena.com/reports/2022-11-debtdao/)
 
 ### GitHub Issues for Reports
-- [Gas issue #](https://github.com/code-423n4/2022-11-debtdao-findings/issues/)
-- [QA / Low issue #](https://github.com/code-423n4/2022-11-debtdao-findings/issues/)
+- [Gas issue #]()
+- [QA / Low issue #](https://github.com/code-423n4/2022-11-debtdao-findings/issues/218)
 
 ### Payout
 - $61.35 USDC
